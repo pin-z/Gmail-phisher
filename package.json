@@ -1,0 +1,29 @@
+{
+  "name": "phishing-project",
+  "version": "1.0.0",
+  "description": "Gmail phishing Web Application Security Project",
+  "main": "theApp.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pin-z/Gmail-Phisher.git"
+  },
+  "author": "Zaim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pin-z/Gmail-Phisher/issues"
+  },
+  "homepage": "https://github.com/pin-z/Gmail-Phisher#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^5.3.0",
+    "mongoose": "^7.1.0"
+  }
+}

@@ -1,0 +1,51 @@
+.form-button {
+    background-color: #4265F4;
+    color: #fff;
+    border: none;
+    padding: 6px 5px;
+    /* increase button padding to make it longer */
+    border-radius: 5px;
+    margin-left: auto;
+    /* align button to right side */
+    cursor: pointer;
+    display: block;
+    /* make button a block element to control width */
+    width: 90px;
+    /* decrease button width */
+    transition: all 0.3s ease-in-out;
+}
+
+.form-button:hover {
+    background-color: #2d3748;
+}
+
+/* Additional CSS styles for logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    height: 25px;
+    width: 75px;
+    margin-right: 10px;
+}
+
+.forgot-link {
+    color: #4265F4;
+    font-size: 16px;
+}
+
+.outline {
+    border: 1px solid #dadce0;
+}
+
+.form-button {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+}
